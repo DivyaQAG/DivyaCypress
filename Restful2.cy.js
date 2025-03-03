@@ -58,8 +58,8 @@ Cypress.on('uncaught:exception', (err, runnable) =>
      {
         var user =
         {
-           "firstname" : "Nantha",
-           "lastname" : "Gopal",
+           "firstname" : "Divya",
+           "lastname" : "Gurumoorthi",
            "totalprice" : 325,
            "depositpaid" : true,
            "bookingdates" : 
