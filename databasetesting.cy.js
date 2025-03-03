@@ -14,10 +14,10 @@ describe('Example to Demonstrate SQL Database Testing in Cypress', () => {
 
     it('Input Entries into the table', function () {
         cy.task('queryDb', `INSERT INTO Persons (PersonID, FirstName, Address, City) VALUES
-        (001, "Messi", "House No. 01", "Argentina"),
-        (002, "Ronaldo", "House No. 02", "portugal"),
-        (003, "Neymar", "House No. 03", "Lapland"),
-        (004, "Zalatan", "House No. 04", "Vantaa");`).then((result) => {
+        (001, "John", "House No. 01", "Argentina"),
+        (002, "Smith", "House No. 02", "India"),
+        (003, "jonny", "House No. 03", "Lapland"),
+        (004, "Divya", "House No. 04", "Vantaa");`).then((result) => {
                 expect(result.affectedRows).to.equal(4)
             })
     })
