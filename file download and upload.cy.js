@@ -13,7 +13,7 @@ Cypress.on('uncaught:exception',(err,runnable) =>{
             cy.wait(4000)
             // Point out the Automated file
             cy.get('#ember336').scrollIntoView()
-            cy.get('#ember336').selectFile("E:\\UploadFilePath\\Vidamuyarchi.jpg")
+            cy.get('#ember336').selectFile("E:\\UploadFilePath\\Firstimage.jpg")
             cy.get('#ember355').should('be.visible')
             
         }) 
@@ -25,7 +25,7 @@ Cypress.on('uncaught:exception',(err,runnable) =>{
        
        // Sample Testing website URL
        //  cy.visit("http://autopract.com/selenium/download.html")
-        //  cy.downloadFile('http://autopract.com/selenium/image.jpeg','mydownloads','fly.jpg')
+        //  cy.downloadFile('http://autopract.com/selenium/image.jpeg','my downloads,'Secondimage.jpg')
             
            
             
