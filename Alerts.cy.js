@@ -66,6 +66,6 @@ describe('Handle Alerts ', () => {
       cy.get('button[onclick="promptbox()"]').click();
   
       // Verify that the action for the input is completed
-      cy.get('#demo1').should('have.text', 'Hello Aswin How are you today');
+      cy.get('#demo1').should('have.text', 'Hello divya How are you today');
     });
   });
