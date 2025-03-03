@@ -52,14 +52,14 @@ describe('Handling iframes',function(){
     it('Iframes using cypress',function(){ //cypress iframes //bold
         cy.visit('https://the-internet.herokuapp.com/iframe')
         cy.frameLoaded('#mce_0_ifr').then(cy.wrap)
-        cy.iframe('#mce_0_ifr').clear().type('Rajesh {ctrl+a}')
+        cy.iframe('#mce_0_ifr').clear().type('Divya {ctrl+a}')
         cy.get('#content > div > div > div.tox-editor-container > div.tox-editor-header > div.tox-toolbar-overlord > div > div:nth-child(3) > button:nth-child(1)')
         .click()
     })
     it('Iframes using cypress',function(){ //cypress iframes //center
         cy.visit('https://the-internet.herokuapp.com/iframe')
         cy.frameLoaded('#mce_0_ifr').then(cy.wrap)
-        cy.iframe('#mce_0_ifr').clear().type('rajesh {ctrl+a}')
+        cy.iframe('#mce_0_ifr').clear().type('Divya {ctrl+a}')
         cy.get("[aria-label='Align center']")
         .click()  
 })
