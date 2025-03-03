@@ -27,8 +27,8 @@ Cypress.on('uncaught:exception', (err, runnable) =>
        })
        .then(function(response){
               expect(response.status).to.eq(200)
-              expect(response.body.booking.firstname).equal("Nantha")
-              expect(response.body.booking.lastname).equal("gopal")
+              expect(response.body.booking.firstname).equal("Divya")
+              expect(response.body.booking.lastname).equal("QA")
               expect(response.body.booking.totalprice).equal(456)
               expect(response.body.booking.depositpaid).equal(true)
               expect(response.body.booking.bookingdates.checkin).equal("2022-08-05")
@@ -61,8 +61,8 @@ Cypress.on('uncaught:exception', (err, runnable) =>
     })
     .then((response)=>{
            expect(response.status).to.eq(200)
-           expect(response.body.firstname).equal("Nantha")
-           expect(response.body.lastname).equal("Gopal")
+           expect(response.body.firstname).equal("Divya")
+           expect(response.body.lastname).equal("QA")
            expect(response.body.totalprice).equal(500)
            expect(response.body.depositpaid).equal(true)
            expect(response.body.bookingdates.checkin).equal("2021-12-31")
@@ -76,7 +76,7 @@ Cypress.on('uncaught:exception', (err, runnable) =>
    {
      let user = {
          "firstname": "qaoncloud",
-         "lastname": "Nantha",
+         "lastname": "Divya",
          "totalprice": 676,
          "depositpaid": true,
          "bookingdates":
@@ -112,7 +112,7 @@ Cypress.on('uncaught:exception', (err, runnable) =>
       body:
       {
           "firstname" : "qaoncloud",
-          "lastname" : "madurai",
+          "lastname" : "mayilai",
           "totalprice": 676,
           "depositpaid": true,
           "bookingdates":
