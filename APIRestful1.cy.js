@@ -48,8 +48,8 @@ Cypress.on('uncaught:exception', (err, runnable) =>
             'authorization' : "Basic YWRtaW46cGFzc3dvcmQxMjM="
        },
        body : {
-            "firstname" : "Nantha",
-            "lastname" : "Gopal",
+            "firstname" : "Divya",
+            "lastname" : "QA",
             "totalprice" : 500,
             "depositpaid" : true,
             "bookingdates" : {
