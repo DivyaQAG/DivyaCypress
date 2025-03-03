@@ -35,7 +35,7 @@ describe('API Testing Demo', function(){
     
     it('POST-create', function(){
     let user={
-    "name": "morpheus",
+    "name": "Morpheus",
     "job": "leader"
     }
     cy.request('POST','https://reqres.in/api/users',user).then((response)=>{
@@ -48,7 +48,7 @@ describe('API Testing Demo', function(){
     
     it('PUT-Update user', function(){
     let user={
-    "name": "Rajesh",
+    "name": "Divya",
     "job": "Tester"
     }
     cy.request('PUT','https://reqres.in/api/users/2',user).then((response)=>{
