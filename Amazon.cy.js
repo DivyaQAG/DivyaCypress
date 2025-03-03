@@ -19,10 +19,10 @@ describe('Writing a script for demo ',()=>{
         cy.get("#continue").click()
         //Password Assertion
         cy.get("#ap_password").should('be.visible')
-        cy.get("#ap_password").type("Nantha@123")
+        cy.get("#ap_password").type("Divya@123")
         cy.get("#signInSubmit").click()
         cy.get('#nav-link-accountList-nav-line-1').should('be.visible')
-        cy.contains('Hello, Nantha').should('be.visible')
+        cy.contains('Hello, Divya').should('be.visible')
 
         //Complete the OTP process by manually
 
