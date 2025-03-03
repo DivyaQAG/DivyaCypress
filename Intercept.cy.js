@@ -21,7 +21,7 @@ describe('Intercept response',function(){
     })
     it('Mocking with intercept test',function(){ //static response with name
         cy.visit('https://jsonplaceholder.typicode.com/')
-        cy.intercept('GET', '/posts', {totalposts:5 ,name: 'sowbarnya' }).as('posts')
+        cy.intercept('GET', '/posts', {totalposts:5 ,name: 'divya' }).as('posts')
         cy.get('body > div > main > table:nth-child(5) > tbody > tr:nth-child(1) > td:nth-child(1) > a').click()
         cy.wait('@posts')
         cy.wait(1000)
@@ -48,7 +48,7 @@ describe('Intercept response',function(){
     })
     it('Mocking with intercept test',function(){ //static response with name
         cy.visit('https://jsonplaceholder.typicode.com/')
-        cy.intercept('GET', '/comments', {totalposts:5 ,name: 'sowbarnya muthusamy' }).as('comments')
+        cy.intercept('GET', '/comments', {totalposts:5 ,name: 'divya gurumoorthi' }).as('comments')
         cy.get('body > div > main > table:nth-child(5) > tbody > tr:nth-child(2) > td:nth-child(1) > a').click()
         cy.wait('@comments')
         cy.wait(1000)
@@ -75,7 +75,7 @@ describe('Intercept response',function(){
     })
     it('Mocking with intercept test',function(){ //static response with name
         cy.visit('https://jsonplaceholder.typicode.com/')
-        cy.intercept('GET', '/albums', {totalposts:5 ,name: 'SOW' }).as('albums')
+        cy.intercept('GET', '/albums', {totalposts:5 ,name: 'Div' }).as('albums')
         cy.get('body > div > main > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(1) > a').click()
         cy.wait('@albums')
         cy.wait(1000)
@@ -102,7 +102,7 @@ describe('Intercept response',function(){
     })
     it('Mocking with intercept test',function(){ //static response with name
         cy.visit('https://jsonplaceholder.typicode.com/')
-        cy.intercept('GET', '/todos', {totalposts:5 ,name: 'SOW' }).as('todos')
+        cy.intercept('GET', '/todos', {totalposts:5 ,name: 'Div' }).as('todos')
         cy.get('body > div > main > table:nth-child(5) > tbody > tr:nth-child(5) > td:nth-child(1) > a').click()
         cy.wait('@todos')
         cy.wait(1000)
