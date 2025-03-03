@@ -8,9 +8,9 @@ describe("Ultimate Demo", () => {
   
     const url = "https://ultimateqa.com/automation/";
     const userdata = {
-      name: "John Doe",
+      name: "Smith Doe",
       message: "This is a test message",
-      firstname: "John",
+      firstname: "Smith",
       lastname: "Doe",
     };
   
@@ -78,7 +78,7 @@ describe("Ultimate Demo", () => {
       cy.get("input[type='submit']").click();
       cy.url().should(
         "eq",
-        "https://ultimateqa.com/?gender=female&firstname=John&lastname=Doe"
+        "https://ultimateqa.com/?gender=female&firstname=Smith&lastname=Doe"
       );
     });
   });
